@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Acceso | MG Abogados y Consultoría</title>
+  <style>
+   
+   
+   * {
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+
+
+    /* Fondo del login */
+    body {
+      background-image: url('img/fondo.jpeg');
+      background-size: cover;             /* Hace que la imagen cubra toda la pantalla */
+      background-position: center;        /* Centra la imagen */
+      background-repeat: no-repeat;   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+
+ /* Imagen lateral MG */
+  .imagen-lateral {
+  width: 180px;     /* altura */
+  height: auto;     /* ancho */
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  object-fit: contain;
+  margin-right: 20px; /* Ajustar la separación */
+}
+
+/* Contenedor central */
+  .login-container {
+  background-color: rgba(255, 255, 255, 0.1); /* Blanco con transparencia */
+  backdrop-filter: blur(10px);               /* Desenfoque del fondo */
+  -webkit-backdrop-filter: blur(10px);       /* Para compatibilidad en Safari */
+      position: relative;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      width: 600px;        /* Ancho personalizado */
+      height: 350px;  
+      text-align: center;
+    }
+
+
+
+    .login-container .logo {
+      font-size: 42px;
+      color: #ffffff; /* azul marino */
+      font-weight: bold;
+      margin-bottom: 30px;
+      
+    }
+
+
+
+    .login-container input[type=""],
+    .login-container input[type="password"] {
+      position: center;
+      width: 60%;
+      margin-left: 35%;
+      margin-bottom: 45px; 
+      padding: 12px;
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-container button {
+      width: 60%;
+    
+      padding: 12px;
+      background-image: url('img/boton_f.png');
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      position: absolute;
+  bottom: 30px; /* separa el botón del borde inferior */
+  left: 20%;
+    
+    }
+
+    .login-container button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(0.98); /* opcional: efecto de presión */
+}
+
+
+    .logo-img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+  </style>
+
+
+</head>
+<body>
+  <div class="login-container">
+  <img src="img/logo-t.png" alt="Logo MG" class="imagen-lateral">
+
+    <div class="logo">Bienvenido</div>
+    <form action="index.html">
+   
+      <input type="" name="correo" placeholder="Usuario" required>
+      <input type="password" name="contrasena" placeholder="Contraseña" required>  
+
+ <button type="submit">Iniciar sesión</button>
+ 
+    </form>
+   </div>
+  </div>
+</body>
+</html>
+
+
+
